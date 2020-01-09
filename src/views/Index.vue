@@ -259,8 +259,8 @@ export default {
       const min = i - count;
       let temp;
       let index;
-      while (i - min < 1) {
-        i -= min;
+      while (i > min) {
+        i -= 1;
         index = Math.floor((i + 1) * Math.random());
         temp = shuffled[index];
         shuffled[index] = shuffled[i];
