@@ -69,7 +69,7 @@
     </div>
     <section class="my-5 bg-sub">
       <div class="container full-width">
-        <div class="row">
+        <div class="row no-gutters">
           <div
             class="col-md-6 text-forText d-flex justify-content-end pr-3 mr-md-0 mr-4 animatedLR"
           >
@@ -95,7 +95,7 @@
     </section>
     <section class="my-5 bg-sub">
       <div class="container full-width">
-        <div class="row">
+        <div class="row no-gutters">
           <div class="col-md-6 animatedLR">
             <img
               src="../assets/images/peter-bucks-_ga1sCEvErE-unsplash.jpg"
@@ -424,7 +424,7 @@ export default {
           // 宣告變數 thisPos = animated 的位置
           const thisPos = $(this).offset().top;
           // console.log('animated', thisPos);
-          if (thisPos <= scrollPos + windowHeight / 1.2) {
+          if (thisPos <= scrollPos + windowHeight / 1.5) {
             // console.log('animated', thisPos);
             $(this).addClass('fadeInY');
           }
