@@ -83,7 +83,7 @@
             </div>
             <h3 class="vertical-text section-title h2">為什麼選擇乾燥花—</h3>
           </div>
-          <div class="col-md-6 animatedRL">
+          <div class="col-md-6 animatedY">
             <img
               src="../assets/images/kiwihug-ibjW86dBHW0-unsplash.jpg"
               alt
@@ -104,7 +104,7 @@
             />
           </div>
           <div
-            class="col-md-6 text-forText d-flex justify-content-end pr-3 mr-md-0 mr-4 animatedRL"
+            class="col-md-6 text-forText d-flex justify-content-end pr-3 mr-md-0 mr-4 animatedY"
           >
             <div class="vertical-text py-3 section-line-height h6">
               <p>或許您會想問，</p>
@@ -420,13 +420,13 @@ export default {
         const scrollPos = $(window).scrollTop();
         // 宣告變數 windowHeight = 目前 window 的高度
         const windowHeight = $(window).height();
-        $('.animatedRL').each(function animatedRL() {
+        $('.animatedY').each(function animatedY() {
           // 宣告變數 thisPos = animated 的位置
           const thisPos = $(this).offset().top;
           // console.log('animated', thisPos);
           if (thisPos <= scrollPos + windowHeight / 1.2) {
             // console.log('animated', thisPos);
-            $(this).addClass('fadeInRL');
+            $(this).addClass('fadeInY');
           }
         });
         $('.animatedLR').each(function animatedLR() {
